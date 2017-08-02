@@ -1,6 +1,6 @@
 {
   "name": "neocloud-appconfig",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "Component read appconfig.json and write it to localstorage",
   "authors": [
     "edgar.piera@neogrup.com"
@@ -13,13 +13,15 @@
   "main": "neocloud-appconfig.html",
   "repository": {
     "type": "git",
-    "url": "git@github.com:NEOGRUP/neocloud-appconfig.git"
+    "url": "https://github.com/NEOGRUP/neocloud-appconfig"
   },
-  "license": "",
+  "license": "MIT",
   "homepage": "",
   "ignore": [],
   "dependencies": {
-    "polymer": "Polymer/polymer#^1.1.0"
+    "polymer": "Polymer/polymer#^1.1.0",
+    "iron-ajax": "PolymerElements/iron-ajax#^1.4.3",
+    "iron-localstorage": "PolymerElements/iron-localstorage#^1.0.6"
   },
   "devDependencies": {
     "iron-component-page": "PolymerElements/iron-component-page#^1.0.0",
