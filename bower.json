@@ -1,6 +1,6 @@
 {
   "name": "neocloud-appconfig",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Component read appconfig.json and write it to localstorage",
   "authors": [
     "edgar.piera@neogrup.com"
