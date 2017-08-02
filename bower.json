@@ -13,7 +13,7 @@
   "main": "neocloud-appconfig.html",
   "repository": {
     "type": "git",
-    "url": "git@github.com:NEOGRUP/cmp_web_neocloud_appconfig.git"
+    "url": "git@github.com:NEOGRUP/neocloud-appconfig.git"
   },
   "license": "",
   "homepage": "",
