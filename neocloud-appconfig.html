@@ -3,7 +3,7 @@
 Copyright (c) 2017 Neo
 -->
 
-<link rel="import" href="../polymer/polymer.html">
+<link rel="import" href="../polymer/polymer-element.html">
 <link rel="import" href="../iron-ajax/iron-ajax.html">
 <link rel="import" href="../iron-localstorage/iron-localstorage.html">
 
@@ -14,36 +14,34 @@ Copyright (c) 2017 Neo
   </template>
 
   <script>
-    Polymer({
-      is: 'neocloud-appconfig',
-
-      properties: {
-        /**
-         * appconfig.json value
-         */
-        appconfig: {
-          type: Object,
-          notify: true,
-          reflectToAttribute: true
-        },
-        /**
-         * URL Path of config file by default /appconfig.json
-         */
-        url: {
-          type: String,
-          value: "/appconfig.json",
-          notify: true,
-          reflectToAttribute: true
+    class NeocloudAppconfig extends Polymer.Element {
+      static get is() { return 'neocloud-appconfig' }
+      static get properties() {
+        return {
+          /**
+          * appconfig.json value
+          */
+          appconfig: {
+            type: Object,
+            notify: true,
+            reflectToAttribute: true
+          },
+          /**
+          * URL Path of config file by default /appconfig.json
+          */
+          url: {
+            type: String,
+            value: "/appconfig.json",
+            notify: true,
+            reflectToAttribute: true
+          }
         }
-      },
-
-      ready: function(){
-      },
-
-      _handleError: function(){
-        console.log('error loading file');
       }
 
-    });
+      _handleError(){
+        console.log('error loading file');
+      }
+    }
+    customElements.define(NeocloudAppconfig.is, NeocloudAppconfig);
   </script>
 </dom-module>
